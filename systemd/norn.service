@@ -1,0 +1,12 @@
+[Unit]
+Description=Norn application time tracker
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/home/as/Projects/Norn/.venv/bin/norn-daemon
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target

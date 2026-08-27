@@ -1,7 +1,0 @@
-
-[database]
-path_sql = "../norn.db" 
-path_state_json = "core/state.json"
-
-
-

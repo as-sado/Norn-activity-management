@@ -1,0 +1,207 @@
+$background: #141414;
+$panel-color: #1c1c1c;
+$accent-color: #ffa927;
+$text-color: #ffffff;
+$muted-color: rgb(136, 136, 136);
+$test-color: #ff0000
+
+Screen {
+    background: $background;
+}
+
+
+#current {
+    height: 5;
+    margin: 0 2;
+    padding: 0 2;
+    border: round $accent-color;
+}
+
+#current-title {
+    color: $muted-color;
+}
+
+#current-app {
+    margin-top: 0;
+    text-style: bold;
+}
+
+#content {
+    margin: 1 1 1 1;
+    border: round $test-color;
+}
+
+#apps-container {
+    height: 1fr;
+    margin: 0 0 1 1;
+    padding: 0 2;
+    border: round $accent-color;
+}
+
+#apps-title {
+    height: 1;
+    color: $muted-color;
+}
+
+#apps {
+    height: 1fr;
+    margin-top: 1;
+    padding: 0;
+    background: $background;
+}
+
+#apps:hover {
+    background: $background;
+}
+
+
+#apps ListItem {
+    height: 1;
+    padding: 0;
+    background: $background;
+}
+
+#apps ListItem:hover{
+    background: $background;
+}
+
+
+
+#apps ListItem Label {
+    width: 1fr;
+    background: $background;
+}
+
+#apps Label Label:hover {
+    background: $background;
+}
+
+#apps-total {
+    height: 1;
+    margin-top: 1;
+    color: $muted-color;
+    text-style: bold;
+    background: $background;
+}
+
+#blocked-container {
+    height: 1fr;
+    margin: 0 2 1 2;
+    padding: 1 2;
+    border: round $accent-color;
+}
+
+#blocked-title {
+    height: 1;
+    color: $muted-color;
+}
+
+#blocked {
+    height: 1fr;
+    margin-top: 1;
+    padding: 0;
+    border: none;
+}
+
+#blocked ListItem {
+    height: 1;
+    padding: 0;
+}
+
+#blocked ListItem Label {
+    width: 1fr;
+}
+
+#intervals-container {
+    height: 1fr;
+    margin: 0 2 1 2;
+    padding: 1 2;
+    border: round $accent-color;
+}
+
+#intervals-title {
+    height: 1;
+    color: $muted-color;
+}
+
+#intervals {
+    height: 1fr;
+    margin-top: 1;
+    padding: 0;
+    border: none;
+}
+
+#intervals ListItem {
+    height: 1;
+    padding: 0;
+}
+
+#intervals ListItem Label {
+    width: 1fr;
+}
+
+#history-container {
+    height: 1fr;
+    margin: 0 2 1 2;
+    padding: 1 2;
+    border: round $accent-color;
+}
+
+#history-title {
+    height: 1;
+    color: $muted-color;
+}
+
+#history-date {
+    height: 3;
+    margin-top: 1;
+    border: round $accent-color;
+}
+
+#history {
+    height: 1fr;
+    margin-top: 1;
+    padding: 0;
+    border: none;
+}
+
+#history ListItem {
+    height: 1;
+    padding: 0;
+}
+
+#history ListItem Label {
+    width: 1fr;
+}
+
+#command {
+    height: 3;
+    margin: 0 2;
+    border: round $accent-color;
+}
+
+#navigation {
+    height: 3;
+    margin: 0 2;
+    align: center middle;
+}
+
+#navigation Button {
+    min-width: 14;
+    height: 3;
+    margin: 0 1;
+    background: $background;
+    color: $muted-color;
+    border: round $accent-color;
+}
+
+#navigation Button:hover {
+    background: $border;
+    color: $text-color;
+}
+
+#navigation Button:focus {
+    background: $border;
+    color: $accent-color;
+    border: round $accent-color;
+}

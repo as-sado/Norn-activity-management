@@ -1,0 +1,3 @@
+[console_scripts]
+norn = norn.main:main
+norn-daemon = norn.run_app:run_app
