@@ -16,10 +16,5 @@ __pycache__/
 # SQL DB
 norn.db
 
-
-
-
-pyproject.toml
-
 src/norn.egg-info/
 
