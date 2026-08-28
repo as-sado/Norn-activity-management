@@ -8,6 +8,6 @@ status_help = """displays the current norn-daemon
 
 """
 
-app_help = """
+app_help = """TUI will launch apps
 
 """

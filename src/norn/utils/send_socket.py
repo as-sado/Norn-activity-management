@@ -1,10 +1,11 @@
 import asyncio
+from norn.config.stronge_config import SOCKET_PATH
 
 
 async def send_socket(command):
 
     reader, writer = await asyncio.open_unix_connection(
-        "/tmp/norn.sock"
+        SOCKET_PATH
     )
 
     writer.write(f"{command}\n".encode())

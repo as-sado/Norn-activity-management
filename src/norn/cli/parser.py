@@ -1,6 +1,12 @@
 import argparse
-from .commands import list, list_block, list_interval, add_block, add_interval, delete_block, delete_interval, start, stop, status, start_tui, list_date
-from .const import status_help, stop_help, start_help, delete_interval_help, delete_block_help,delete_help,add_interval_help, add_block_help, add_help, list_help, list_interval_help, list_blcok_help, list_date_help
+from .commands import (list, list_block, list_interval, 
+                       add_block, add_interval, 
+                       delete_block, delete_interval, 
+                       start, stop, status, start_tui, list_date)
+from .const import (status_help, stop_help, start_help, app_help,
+                    delete_interval_help, delete_block_help,delete_help,
+                    add_interval_help, add_block_help, add_help, 
+                    list_help, list_interval_help, list_blcok_help, list_date_help)
 from norn.utils.parse_time import parse_time
 
 
@@ -36,7 +42,7 @@ def get_argument():
     # norn app
     app_parser = commands.add_parser(
         "app",
-        help=None,
+        help=app_help,
     )
     app_parser.set_defaults(func=start_tui)
     
@@ -157,7 +163,7 @@ def get_argument():
     # norn list date
     date_list_pareser = list_command.add_parser(
         "date",
-        help=None
+        help=list_date_help
     )
 
     date_list_pareser.add_argument(

@@ -1,0 +1,6 @@
+$background: #0f0907;
+$scroll_background: #DD7548;
+$scroll_color: #DD8F3F;
+$accent_color: #F19F61;
+$text_color: #DE5733;
+$muted_color: #aaa58b;

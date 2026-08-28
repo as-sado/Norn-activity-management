@@ -1,10 +1,10 @@
 import asyncio
 import os
-from norn.cli.tui.data import transfer_from_block_app,transfer_from_block_app_interval
+from norn.repository.data_transfer_from_sql import transfer_from_block_app,transfer_from_block_app_interval
+from norn.config.stronge_config import SOCKET_PATH
 
 
 
-SOCKET_PATH = "/tmp/norn.sock"
 
 clients: set[asyncio.StreamWriter] = set()
 

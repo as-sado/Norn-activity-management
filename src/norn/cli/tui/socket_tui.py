@@ -1,7 +1,6 @@
 import asyncio
 import norn.cli.tui.data as db
-
-SOCKET_PATH = "/tmp/norn.sock"
+from norn.config.stronge_config import SOCKET_PATH
 
 
 async def socket_server_tui():

@@ -1,7 +1,10 @@
 
 [database]
-path_sql = "norn/norn.db" 
-path_state_json = "core/state.json"
+path_sql = "norn.db" 
+path_state_json = "src/norn/core/state.json"
+
+[socket]
+path_socket = "/tmp/norn.sockk"
 
 
 

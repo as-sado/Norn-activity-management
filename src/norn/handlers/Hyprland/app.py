@@ -6,16 +6,12 @@ from norn.repository import app_time_update
 from norn.utils.time_difference import time_difference
 import norn.handlers.Hyprland.monitor_data as md
 from norn.utils.send_socket import async_notify_daemon
-from norn.utils.send_messege import send_message
 
 
 async def handler_active_app():
 
     try:
         current_app = await get_activewindow() 
-        if current_app == None:
-            return None
-    
         await async_notify_daemon(f"app[{current_app}]")   
 
         if current_app != md.last_app:
@@ -26,7 +22,6 @@ async def handler_active_app():
 
             md.timer = new_time
             md.last_app = str(current_app)
-
 
     except json.JSONDecodeError:
         pass

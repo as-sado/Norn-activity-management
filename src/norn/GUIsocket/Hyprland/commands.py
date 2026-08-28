@@ -8,7 +8,6 @@ import signal
 
 
 async def _query_json(command: str) -> Any:
-    """Send a JSON query and return parsed result."""
     response = await _send(f"j/{command}")
     try:
         return json.loads(response)

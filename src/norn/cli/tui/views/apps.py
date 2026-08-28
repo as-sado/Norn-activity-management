@@ -1,7 +1,5 @@
 from textual.widgets import Label, ListView
-
 import norn.cli.tui.data as db
-
 from norn.cli.tui.list_utils import update_list
 
 

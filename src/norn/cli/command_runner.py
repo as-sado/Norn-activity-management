@@ -1,7 +1,5 @@
 import shlex
-
 from norn.cli.parser import get_argument
-from norn.utils.logger import logger
 
 
 def execute_command(command: str):

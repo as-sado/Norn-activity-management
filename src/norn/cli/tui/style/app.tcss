@@ -1,46 +1,63 @@
-$background: #141414;
-$panel-color: #1c1c1c;
-$accent-color: #ffa927;
-$text-color: #ffffff;
-$muted-color: rgb(136, 136, 136);
-$test-color: #ff0000
+Stopwatch {
+    background: $background;
+}
 
 Screen {
     background: $background;
 }
 
 
+/* =========================
+   CURRENT APPLICATION
+   ========================= */
+
 #current {
     height: 5;
     margin: 0 2;
     padding: 0 2;
-    border: round $accent-color;
+    border: round $accent;
+    background: $background;
 }
 
 #current-title {
-    color: $muted-color;
+    color: $text-muted;
+    background: $background;
 }
 
 #current-app {
     margin-top: 0;
     text-style: bold;
+    background: $background;
 }
 
+
+/* =========================
+   CONTENT
+   ========================= */
+
 #content {
-    margin: 1 1 1 1;
-    border: round $test-color;
+    margin: 1 2;
+    padding: 0;
+    background: $background;
 }
+
+
+/* =========================
+   APPS
+   ========================= */
 
 #apps-container {
     height: 1fr;
-    margin: 0 0 1 1;
+    margin: 0 0 1 0;
     padding: 0 2;
-    border: round $accent-color;
+    border: round $accent;
+    background: $background;
 }
 
 #apps-title {
     height: 1;
-    color: $muted-color;
+    color: $text-muted;
+    background: $background;
 }
 
 #apps {
@@ -48,12 +65,18 @@ Screen {
     margin-top: 1;
     padding: 0;
     background: $background;
+
+    scrollbar-color: $accent;
+    scrollbar-background: $scroll-background;
+    scrollbar-background-active: $scroll-background;
+    scrollbar-color-active: $accent;
+    scrollbar-background-hover: $scroll-background;
+    scrollbar-color-hover: $accent;
 }
 
 #apps:hover {
     background: $background;
 }
-
 
 #apps ListItem {
     height: 1;
@@ -61,39 +84,39 @@ Screen {
     background: $background;
 }
 
-#apps ListItem:hover{
+#apps ListItem:hover {
     background: $background;
 }
-
-
 
 #apps ListItem Label {
     width: 1fr;
     background: $background;
 }
 
-#apps Label Label:hover {
-    background: $background;
-}
-
 #apps-total {
     height: 1;
     margin-top: 1;
-    color: $muted-color;
+    color: $text-muted;
     text-style: bold;
     background: $background;
 }
 
+
+/* =========================
+   BLOCKED
+   ========================= */
+
 #blocked-container {
     height: 1fr;
-    margin: 0 2 1 2;
     padding: 1 2;
-    border: round $accent-color;
+    border: round $accent;
+    background: $background;
 }
 
 #blocked-title {
     height: 1;
-    color: $muted-color;
+    color: $text-muted;
+    background: $background;
 }
 
 #blocked {
@@ -101,27 +124,51 @@ Screen {
     margin-top: 1;
     padding: 0;
     border: none;
+    background: $background;
+
+    scrollbar-color: $accent;
+    scrollbar-background: $scroll-background;
+    scrollbar-background-active: $scroll-background;
+    scrollbar-color-active: $accent;
+    scrollbar-background-hover: $scroll-background;
+    scrollbar-color-hover: $accent;
+}
+
+#blocked:hover {
+    background: $background;
 }
 
 #blocked ListItem {
     height: 1;
     padding: 0;
+    background: $background;
+}
+
+#blocked ListItem:hover {
+    background: $background;
 }
 
 #blocked ListItem Label {
     width: 1fr;
+    background: $background;
 }
+
+
+/* =========================
+   INTERVALS
+   ========================= */
 
 #intervals-container {
     height: 1fr;
-    margin: 0 2 1 2;
     padding: 1 2;
-    border: round $accent-color;
+    border: round $accent;
+    background: $background;
 }
 
 #intervals-title {
     height: 1;
-    color: $muted-color;
+    color: $text-muted;
+    background: $background;
 }
 
 #intervals {
@@ -129,33 +176,58 @@ Screen {
     margin-top: 1;
     padding: 0;
     border: none;
+    background: $background;
+
+    scrollbar-color: $accent;
+    scrollbar-background: $scroll-background;
+    scrollbar-background-active: $scroll-background;
+    scrollbar-color-active: $accent;
+    scrollbar-background-hover: $scroll-background;
+    scrollbar-color-hover: $accent;
+}
+
+#intervals:hover {
+    background: $background;
 }
 
 #intervals ListItem {
     height: 1;
     padding: 0;
+    background: $background;
+}
+
+#intervals ListItem:hover {
+    background: $background;
 }
 
 #intervals ListItem Label {
     width: 1fr;
+    background: $background;
 }
+
+
+/* =========================
+   HISTORY
+   ========================= */
 
 #history-container {
     height: 1fr;
-    margin: 0 2 1 2;
     padding: 1 2;
-    border: round $accent-color;
+    border: round $accent;
+    background: $background;
 }
 
 #history-title {
     height: 1;
-    color: $muted-color;
+    color: $text-muted;
+    background: $background;
 }
 
 #history-date {
     height: 3;
     margin-top: 1;
-    border: round $accent-color;
+    border: round $accent;
+    background: $background;
 }
 
 #history {
@@ -163,27 +235,57 @@ Screen {
     margin-top: 1;
     padding: 0;
     border: none;
+    background: $background;
+
+    scrollbar-color: $accent;
+    scrollbar-background: $scroll-background;
+    scrollbar-background-active: $scroll-background;
+    scrollbar-color-active: $accent;
+    scrollbar-background-hover: $scroll-background;
+    scrollbar-color-hover: $accent;
+}
+
+#history:hover {
+    background: $background;
 }
 
 #history ListItem {
     height: 1;
     padding: 0;
+    background: $background;
+}
+
+#history ListItem:hover {
+    background: $background;
 }
 
 #history ListItem Label {
     width: 1fr;
+    background: $background;
 }
+
+
+/* =========================
+   COMMAND
+   ========================= */
 
 #command {
     height: 3;
     margin: 0 2;
-    border: round $accent-color;
+    border: round $accent;
+    background: $background;
 }
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
 
 #navigation {
     height: 3;
     margin: 0 2;
     align: center middle;
+    background: $background;
 }
 
 #navigation Button {
@@ -191,17 +293,70 @@ Screen {
     height: 3;
     margin: 0 1;
     background: $background;
-    color: $muted-color;
-    border: round $accent-color;
+    color: $text-muted;
+    border: round $accent;
 }
 
 #navigation Button:hover {
-    background: $border;
-    color: $text-color;
+    background: $background;
+    color: $foreground;
 }
 
 #navigation Button:focus {
-    background: $border;
-    color: $accent-color;
-    border: round $accent-color;
+    background: $background;
+    color: $accent;
+    border: round $accent;
+}
+
+
+/* =========================
+   LIST FOCUS
+   ========================= */
+
+#apps:focus {
+    background: $background;
+}
+
+#apps:focus ListItem {
+    background: $background;
+}
+
+#apps:focus ListItem Label {
+    background: $background;
+}
+
+#blocked:focus {
+    background: $background;
+}
+
+#blocked:focus ListItem {
+    background: $background;
+}
+
+#blocked:focus ListItem Label {
+    background: $background;
+}
+
+#intervals:focus {
+    background: $background;
+}
+
+#intervals:focus ListItem {
+    background: $background;
+}
+
+#intervals:focus ListItem Label {
+    background: $background;
+}
+
+#history:focus {
+    background: $background;
+}
+
+#history:focus ListItem {
+    background: $background;
+}
+
+#history:focus ListItem Label {
+    background: $background;
 }

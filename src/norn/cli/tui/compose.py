@@ -86,7 +86,7 @@ def compose_ui() -> ComposeResult:
 
     yield Horizontal(
         Button(
-            "(f1) Apps",
+            "(f1) Apps ",
             id="nav-apps",
         ),
         Button(

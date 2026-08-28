@@ -1,9 +1,6 @@
 import asyncio
-
 from textual.widgets import Input
-
 from norn.cli.command_runner import execute_command
-from norn.utils.send_messege import send_message
 from norn.cli.tui.views.history import load_history
 
 async def handle_input_submitted(app, event: Input.Submitted):

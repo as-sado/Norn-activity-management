@@ -25,5 +25,4 @@ async def app():
 def run_app():
     asyncio.run(app())
 
-run_app()
     

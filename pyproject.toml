@@ -20,5 +20,8 @@ norn = "norn.main:main"
 norn-daemon = "norn.run_app:run_app"
 
 
+
 [tool.setuptools.packages.find]
 where = ["src"]
+
+
