@@ -14,14 +14,12 @@ __pycache__/
 .DS_Store
 
 # SQL DB
-.src/core/sql/app.db
-.norn.db
+norn.db
 
 
-.gitignore
 
 
-.pyproject.toml
+pyproject.toml
 
-.src/norn.egg-info/
+src/norn.egg-info/
 
