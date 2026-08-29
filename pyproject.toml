@@ -1,0 +1,24 @@
+[project]
+name = "norn"
+version = "0.1.0"
+description = "Application time tracker for Linux and Hyprland"
+requires-python = ">=3.13"
+
+dependencies = [
+    "aiosqlite==0.22.1",
+    "textual==6.1.0",
+
+]
+
+[project.scripts]
+norn = "norn.main:main"
+norn-daemon = "norn.run_app:run_app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"norn.config" = ["config.toml"]
+"norn.core" = ["state.json", "norn.db"]
+"norn.cli.tui.style" = ["*.tcss"]
+

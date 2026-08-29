@@ -1,4 +1,5 @@
 current_app = None
+from norn.repository.data_transfer_from_sql import transfer_from_daily_storage, transfer_from_block_app_interval, transfer_from_block_app
 from norn.core.app_data import  data_active_app, data_block_app, data_block_app_interval
 from time import perf_counter
 
