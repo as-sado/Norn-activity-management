@@ -1,3 +1,3 @@
 Norn is a TUI app designed to help you track how much time you spend on your Linux system on Hyprland. It can show how long a particular window was active. You can also block apps based on their active time or a specific time interval. The app stores data on which applications were active on any given day, so you can review this information later and draw conclusions.
 
-#### \[[manual](https://github.com/as-sado/Norn-activity-management/manual.md)] \[[install](https://github.com/as-sado/Norn-activity-management/Install.md)]
+#### [[manual](manual.md)] [[install](Install.md)]
