@@ -5,7 +5,7 @@ set -e
 PROJECT_DIR="$(dirname "$0")"
 
 # Install Norn
-python3 -m pip install --user "$PROJECT_DIR"
+pip install --user "$PROJECT_DIR"
 
 # Install systemd service
 SERVICE_DIR="$HOME/.config/systemd/user"

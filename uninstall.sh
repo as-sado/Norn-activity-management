@@ -39,7 +39,7 @@ esac
 
 
 
-python3 -m pip uninstall -y norn
+pip uninstall -y norn
 
 
 
