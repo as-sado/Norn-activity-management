@@ -29,8 +29,6 @@ case "$SHELL_NAME" in
         cp "$PROJECT_DIR/src/norn/completions/_norn" \
            "$COMPLETION_DIR/_norn"
 
-        autoload -U compinit
-        compinit
         ;;
 
     bash)
@@ -41,7 +39,6 @@ case "$SHELL_NAME" in
         cp "$PROJECT_DIR/src/norn/completions/norn.bash" \
            "$COMPLETION_DIR/norn"
 
-        source "$COMPLETION_DIR/norn"
         ;;
 
     fish)
@@ -52,13 +49,15 @@ case "$SHELL_NAME" in
         cp "$PROJECT_DIR/src/norn/completions/norn.fish" \
            "$COMPLETION_DIR/norn.fish"
 
-        source "$COMPLETION_DIR/norn.fish"
         ;;
 
     *)
         echo "Warning: unsupported shell: $SHELL_NAME"
         ;;
 esac
+
+rm -rf "$PROJECT_DIR/build"
+rm -rf "$PROJECT_DIR/src/norn.egg-info"
 
 norn start
 
